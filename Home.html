@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@700&family=Roboto+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="Homebody">
+    <div class="barra">
+        <section id="date"></section>
+    </div>
+
+    <div class="usuario">
+        <h1 id="userlogeado"> Bienvenido a la base de datos de Rick and Morty</h1>
+    </div>
+    <div class="tabla container">
+        <form action="" class="formulario" id="formulario">
+            <div class="formulario__item" id="item__usuario">
+                <label for="id" class="formulario__label">Ingrese el Id del personaje que desea conocer</label>
+                <div class="formulario__item-input">
+                    <input type="number" class="formulario__input" name="id" id="id" placeholder="Ingrese Id.">
+                </div>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="button" class="formulario__btn" id="btn__buscar">Buscar</button>
+                    <p class="formulario__input-error">No existe coincidencia en la busquedad de su ID</p>
+                </div>
+            </div>
+        </form>
+        <br>
+        <table class="container">
+            <thead>
+                <tr>
+                    <th>
+                        <h1>ID</h1>
+                    </th>
+                    <th>
+                        <h1>Name</h1>
+                    </th>
+                    <th>
+                        <h1>Status</h1>
+                    </th>
+                    <th>
+                        <h1>Species</h1>
+                    </th>
+                    <th>
+                        <h1>Type</h1>
+                    </th>
+                    <th>
+                        <h1>Gender</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="resultado">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/validacionIngreso.js"></script>
+    <script src="js/homeScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
